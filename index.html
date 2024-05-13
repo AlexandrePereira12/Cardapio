@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Hamburgueria</title>
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+
+        <div class="w-full h-full flex flex-col justify-center items-center">
+
+            <img src="./assets/hamb-1.png" alt="LOGO BURGUER"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-125 duration-200">
+
+            <h1 class="text-5xl mt-4 mb-2 font-bold text-white">Hamburgueria Passaré</h1>
+
+            <span class="text-white font-medium mt-4">Rua 7, 110 - Passaré, Fortaleza - Ceará</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-6" id="date-span">
+
+                <span class="text-white font-medium">Terça á Domingo - 18:00 as 23:00</span>
+
+            </div>
+
+        </div>
+
+
+
+    </header>
+    <!--fim do header-->
+
+    <H2 class="text-2xl md:text-4xl font-bold text-center mt-9 mb-6">Conheça nosso cardápio</H2>
+
+    <!--MENU-->
+
+    <div id="menu">
+
+        <div class="mx-auto max-w-7xl px-2 my-4 mb-4">
+            <h2 class="font-bold text-2xl text-center">sanduíches</h2>
+        </div>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-18 mt">
+
+            <!--SANDUICHE 1-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-1.png" alt="hamburguer smash"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+                    <p class="font-bold">Hamburguer smash</p>
+
+                    <p class="text-sm"> O sanduíche smash é uma deliciosa criação que combina uma carne suculenta e
+                        temperada, prensada até ficar fina e crocante por fora, enquanto mantém a umidade por dentro. É
+                        como uma explosão de sabor em cada mordida, com camadas de queijo derretido, vegetais frescos e
+                        molhos irresistíveis, tudo isso entre dois pedaços de pão macio e tostado.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$16</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="hamburguer smash"
+                            data-price="16">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 1-->
+
+
+
+            <!--SANDUICHE 2-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-2.png" alt="X-Bacon"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+
+                    <p class="font-bold">X-Bacon</p>
+
+                    <p class="text-sm"> O sanduíche de bacon é uma celebração da indulgência, com fatias generosas de
+                        bacon crocante, combinadas com queijo derretido, alface fresca e tomate suculento, tudo isso
+                        envolto em um pão macio e levemente tostado. Cada mordida é uma explosão de sabor defumado e
+                        salgado, uma experiência verdadeiramente inesquecível para os amantes do bacon!</p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$19</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X-Bacon" data-price="19">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 2-->
+
+
+
+            <!--SANDUICHE 3-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-3.png" alt="Cheese Burger"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+                    <p class="font-bold">Cheese Burger</p>
+
+                    <p class="text-sm"> Imagine um hambúrguer suculento, grelhado no ponto perfeito, coberto com uma
+                        camada generosa de queijo derretido, servido em um pão macio e levemente tostado. Cada mordida é
+                        uma explosão de sabores irresistíveis, combinando a riqueza do queijo com a intensidade da carne
+                        grelhada, tudo envolto em uma experiência de conforto que é impossível resistir. </p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$18</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheese Burger"
+                            data-price="18">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 3-->
+
+
+
+            <!--SANDUICHE 4-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-4.png" alt="Hamburguer Simples"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+
+                    <p class="font-bold">Hamburguer Simples</p>
+
+                    <p class="text-sm">A essência da perfeição entre pães. Imagine um suculento hambúrguer grelhado,
+                        cuidadosamente temperado, empilhado sobre uma cama de alface crocante e fatias frescas de
+                        tomate, tudo isso abraçado por um pão macio e tostado. Cada mordida é uma explosão de sabor, uma
+                        experiência tão satisfatória que você nunca vai querer parar de saborear. Simplesmente
+                        irresistível!</p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$10</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Simples"
+                            data-price="10">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 4-->
+
+
+
+            <!--SANDUICHE 5-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-5.png" alt="Chicken Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+                    <p class="font-bold">Chicken Burguer</p>
+
+                    <p class="text-sm"> Um suculento filé de frango grelhado, temperado com uma mistura especial de
+                        especiarias, coberto com queijo derretido e servido em um pão macio e levemente tostado. Cada
+                        mordida é uma explosão de sabores, combinando a suculência do frango com a cremosidade do
+                        queijo, tudo envolto em uma experiência gastronômica que vai deixar você querendo mais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$18</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chicken Burguer"
+                            data-price="18">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 5-->
+
+
+
+            <!--SANDUICHE 6-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-6.png" alt="Crispy Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+
+                    <p class="font-bold">Crispy Burguer</p>
+
+                    <p class="text-sm">Uma deliciosa carne de hambúrguer crocante por fora e suculenta por dentro,
+                        complementada por uma camada generosa de queijo derretido e coberta com alface fresca e tomate
+                        suculento, tudo isso abraçado por um pão macio e tostado. Cada mordida é uma experiência de
+                        texturas e sabores, uma combinação perfeita de crocante e cremoso que vai deixar você com água
+                        na boca só de pensar. </p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$22</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crispy Burguer"
+                            data-price="22">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 6-->
+
+
+
+            <!--SANDUICHE 7-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-7.png" alt="Onion Rings Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+                    <p class="font-bold">Onion Rings Burguer</p>
+
+                    <p class="text-sm">Um suculento hambúrguer, coberto com uma camada crocante de onion rings douradas
+                        e crocantes, que adicionam uma incrível textura e um sabor levemente adocicado. Para completar,
+                        queijo derretido, alface fresca e molhos deliciosos, tudo isso entre dois pedaços de pão macio e
+                        levemente tostado. </p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$22</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Onion Rings Burguer" data-price="22">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 7-->
+
+
+
+            <!--SANDUICHE 8-->
+            <div class="flex gap-2">
+
+                <img src="/assets/hamb-8.png" alt="X-Vegetariano"
+                    class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+
+                <div>
+
+                    <p class="font-bold">X-Vegetariano</p>
+
+                    <p class="text-sm">Uma combinação de vegetais grelhados, como abobrinha, berinjela e pimentão,
+                        cobertos com queijo derretido e servidos com folhas verdes crocantes e fatias suculentas de
+                        tomate, tudo isso envolto em um pão macio e levemente tostado.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt3">
+
+                        <p class="font-bold text-lg">R$13</p>
+
+                        <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X-Vegetariano"
+                            data-price="13">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                        </BUtton>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--SANDUICHE 8-->
+
+        </main>
+        
+        <!--BEBIDAS-->
+            <div class="mx-auto max-w-7xl px-2 my-6">
+                <h2 class="font-bold text-2xl text-center">Bebidas</h2>
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-18 mt" id="menu">
+                <div class="flex gap-2 w-full">
+
+                    <img src="/assets/refri-1.png" alt="Coca-Lata"
+                        class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+    
+                    <div class="w-full">
+    
+                        <p class="font-bold">Coca-Lata</p>
+    
+                        <p class="text-sm">Coca-Lata de 600 mL</p>
+    
+                        <div class="flex items-center gap-2 justify-between mt3">
+    
+                            <p class="font-bold text-lg">R$6</p>
+    
+                            <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca"
+                                data-price="6">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+    
+                            </BUtton>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+                <div class="flex gap-2 w-full">
+
+                    <img src="/assets/refri-2.png" alt="Guaraná Antartica"
+                        class="w-28 h-28 rounded-md hover:scale-145 hover:-rotate-2 duration-500">
+    
+                    <div class="w-full">
+    
+                        <p class="font-bold">Guaraná Antartica</p>
+    
+                        <p class="text-sm">Guaraná Antartica de 600 mL</p>
+    
+                        <div class="flex items-center gap-2 justify-between mt3">
+    
+                            <p class="font-bold text-lg">R$6</p>
+    
+                            <BUtton class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaraná"
+                                data-price="6">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+    
+                            </BUtton>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+            <br>
+            <br>
+    
+        <!--FIM DAS BEBIDAS-->
+
+
+    </div>
+    <!--FIM DO MENU-->  
+    
+    
+
+    <!--MODAL CART-->
+
+        <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-9[99] items-center justify-center hidden" id="cart-modal">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="text-center font-bold text-3xl mb-2 ">Meu carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+                <p class="font-bold mt-4">Endereço de Entrega</p>
+                <input type="text"placeholder="Digite aqui seu endereço completo" id="address" class="w-full border-4 p-2 rounded my-2">
+                <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo!</p>
+                <div class="flex items-center justify-between mt-6 w-full">
+                    <button id="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+                </div>
+
+            </div>
+        </div>
+
+    <!--FIM MODAL CART-->
+
+
+
+    <!--FOOTER-->
+        <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+                (<span id="cart-count">0</span>)
+                Veja seu carrinho
+                <i class=" fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </footer>
+    <!--FIM DO FOOTER-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
